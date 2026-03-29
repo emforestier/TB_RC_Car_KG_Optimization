@@ -22,7 +22,7 @@ router = APIRouter(tags=["chat"])
 
 @router.post("/chat", response_model=ChatResponse)
 def post_chat(body: ChatRequest) -> ChatResponse:
-    # TODO-1 (Required): Wrap the run_chat() call in a try/except block.
+    # TODO-7 (Required): Wrap the run_chat() call in a try/except block.
     #
     # Handle two error types:
     #   - ValueError  → return HTTP 503 with the error message as detail

@@ -43,7 +43,7 @@ class _GraphClient:
         _driver.verify_connectivity()
 
     def run_query(self, query: str, parameters: dict | None = None) -> list[dict]:
-        # TODO-1 (Required): Execute the Cypher query and return results as a list of dicts.
+        # TODO-8 (Required): Execute the Cypher query and return results as a list of dicts.
         #
         # The Neo4j Python driver works like this:
         #   1. Open a session:       with _driver.session() as session:
@@ -66,7 +66,7 @@ class _GraphClient:
         #           rows.append(record.data())
         #   return rows
 
-        raise NotImplementedError("TODO-1: Execute the Cypher query and return the results.")
+        raise NotImplementedError("TODO-8: Execute the Cypher query and return the results.")
 
 
 def close_graph_driver() -> None:

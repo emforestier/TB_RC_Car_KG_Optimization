@@ -24,7 +24,7 @@ router = APIRouter(tags=["health"])
 
 @router.get("/health", response_model=HealthResponse)
 def get_health() -> HealthResponse:
-    # TODO-1 (Required): Check Neo4j connectivity and return a HealthResponse.
+    # TODO-6 (Required): Check Neo4j connectivity and return a HealthResponse.
     #
     # Steps:
     #   1. Load settings:

@@ -19,12 +19,12 @@ interface ChatInputProps {
 }
 
 export default function ChatInput({ onSend, disabled }: ChatInputProps) {
-  // TODO-1 (Required): Create a state variable for the input text.
+  // TODO-17 (Required): Create a state variable for the input text.
   //
   // Use React's useState hook:
   //   const [input, setInput] = useState("");
 
-  // TODO-2 (Required): Build the submit handler and the JSX.
+  // TODO-18 (Required): Build the submit handler and the JSX.
   //
   // Steps:
   //   1. Write a handleSubmit function that:

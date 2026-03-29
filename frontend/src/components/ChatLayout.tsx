@@ -20,7 +20,7 @@ import ChatInput from "./ChatInput";
 // import { sendChat } from "../lib/api";  // ← uncomment after you implement api.ts
 
 export default function ChatLayout() {
-  // TODO-1 (Required): Set up state for messages and loading.
+  // TODO-20 (Required): Set up state for messages and loading.
   //
   // Use React's useState:
   //   const [messages, setMessages] = useState<Message[]>([]);
@@ -39,7 +39,7 @@ export default function ChatLayout() {
   // Hint — updating arrays in React state:
   //   setMessages(prev => [...prev, newMessage]);
 
-  // TODO-2 (Required): Render the layout with MessageList and ChatInput.
+  // TODO-21 (Required): Render the layout with MessageList and ChatInput.
   //
   // Return JSX like:
   //   <div>

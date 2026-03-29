@@ -15,7 +15,7 @@ import type { ChatRequest, ChatResponse } from "../types/chat";
 
 const BASE_URL = "http://localhost:8000";
 
-// TODO-1 (Required): Implement sendChat().
+// TODO-13 (Required): Implement sendChat().
 //
 // This function should:
 //   1. Accept a `message` string parameter.
@@ -29,7 +29,7 @@ const BASE_URL = "http://localhost:8000";
 // Signature:
 //   export async function sendChat(message: string): Promise<ChatResponse> { ... }
 
-// TODO-2 (Optional): Implement getHealth().
+// TODO-14 (Optional): Implement getHealth().
 //
 // This function should:
 //   1. Send a GET request to `${BASE_URL}/health`.

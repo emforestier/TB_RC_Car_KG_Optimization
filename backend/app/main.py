@@ -37,7 +37,7 @@ app = FastAPI(
 )
 
 
-# TODO-1 (Required): Add CORS middleware.
+# TODO-4 (Required): Add CORS middleware.
 #
 # The React frontend runs on http://localhost:5173 but the API runs on
 # http://localhost:8000. Browsers block cross-origin requests by default.
@@ -56,7 +56,7 @@ app = FastAPI(
 # local development "*" is fine.
 
 
-# TODO-2 (Required): Register the route files (routers).
+# TODO-5 (Required): Register the route files (routers).
 #
 # FastAPI uses "routers" to organize endpoints into separate files.
 # The health and chat modules each export a `router` object.

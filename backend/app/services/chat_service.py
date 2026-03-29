@@ -57,7 +57,7 @@ def generate_cypher(message: str) -> str:
 
     genai.configure(api_key=api_key)
 
-    # TODO-1 (Required): Write the system_instruction string.
+    # TODO-10 (Required): Write the system_instruction string.
     #
     # This string is the "system prompt" — it tells Gemini what role it plays
     # and what rules to follow. Your instruction should include:
@@ -89,7 +89,7 @@ def generate_cypher(message: str) -> str:
         system_instruction=system_instruction,
     )
 
-    # TODO-2 (Required): Call model.generate_content() and extract the text.
+    # TODO-11 (Required): Call model.generate_content() and extract the text.
     #
     # Steps:
     #   1. Call model.generate_content() with the user's `message`.
@@ -106,7 +106,7 @@ def generate_cypher(message: str) -> str:
     #   response = model.generate_content(message, generation_config=...)
     #   content = response.text  # may throw ValueError if blocked
 
-    raise NotImplementedError("TODO-2: Call Gemini and return the extracted Cypher query.")
+    raise NotImplementedError("TODO-11: Call Gemini and return the extracted Cypher query.")
 
 
 def run_chat(message: str) -> ChatResponse:

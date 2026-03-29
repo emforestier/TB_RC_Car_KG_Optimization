@@ -11,7 +11,7 @@
  *   - Create a React root and render <App /> into it.
  */
 
-// TODO-1 (Required): Mount the React app.
+// TODO-15 (Required): Mount the React app.
 //
 // Steps:
 //   1. Import React and ReactDOM:

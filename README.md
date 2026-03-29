@@ -101,31 +101,38 @@ Treat the folder boundaries below as the "contract" between teams:
 
 ## Student TODOs
 
-Every file that students need to implement contains numbered `TODO` comments with step-by-step instructions. Search for `TODO-` in your editor to find them all.
+Every file that students need to implement contains globally numbered `TODO` comments (TODO-1 through TODO-21) with step-by-step instructions. Search for `TODO-` in your editor to find them all. The numbers are sequential across the entire project so you can assign specific TODOs to specific students.
 
-**Backend — 11 TODOs across 7 files:**
+**Backend — TODOs 1–11 across 7 files:**
 
-| File | TODOs | What you implement |
+| # | File | What you implement |
 |---|---|---|
-| `backend/app/models/schemas.py` | TODO-1, 2, 3 | Define Pydantic fields for request/response models |
-| `backend/app/main.py` | TODO-1, 2 | Add CORS middleware, register route files |
-| `backend/app/api/routes/health.py` | TODO-1 | Check Neo4j connectivity, return health status |
-| `backend/app/api/routes/chat.py` | TODO-1 | Add error handling with proper HTTP status codes |
-| `backend/app/services/graph_client.py` | TODO-1 | Execute Cypher queries against Neo4j |
-| `backend/app/services/answer_formatter.py` | TODO-1 | Format Neo4j results into readable text |
-| `backend/app/services/chat_service.py` | TODO-1, 2 | Write the Gemini prompt, call the API, extract Cypher |
+| TODO-1 | `backend/app/models/schemas.py` | Add `message` field to ChatRequest |
+| TODO-2 | `backend/app/models/schemas.py` | Add `answer` and `cypher` fields to ChatResponse |
+| TODO-3 | `backend/app/models/schemas.py` | Add fields to HealthResponse |
+| TODO-4 | `backend/app/main.py` | Add CORS middleware |
+| TODO-5 | `backend/app/main.py` | Register route files (routers) |
+| TODO-6 | `backend/app/api/routes/health.py` | Check Neo4j connectivity, return health status |
+| TODO-7 | `backend/app/api/routes/chat.py` | Error handling with try/except and HTTP status codes |
+| TODO-8 | `backend/app/services/graph_client.py` | Execute Cypher queries against Neo4j |
+| TODO-9 | `backend/app/services/answer_formatter.py` | Format Neo4j results into readable text |
+| TODO-10 | `backend/app/services/chat_service.py` | Write the Gemini system prompt |
+| TODO-11 | `backend/app/services/chat_service.py` | Call the Gemini API and extract Cypher |
 
-**Frontend — 11 TODOs across 7 files:**
+**Frontend — TODOs 12–21 across 7 files:**
 
-| File | TODOs | What you implement |
+| # | File | What you implement |
 |---|---|---|
-| `frontend/src/types/chat.ts` | TODO-1 | Define TypeScript types matching backend schemas |
-| `frontend/src/lib/api.ts` | TODO-1, 2 | `sendChat()` POST to `/chat`, optional `getHealth()` |
-| `frontend/src/main.tsx` | TODO-1 | Mount the React app into the page |
-| `frontend/src/App.tsx` | TODO-1 | Import and render the ChatLayout component |
-| `frontend/src/components/ChatInput.tsx` | TODO-1, 2 | Controlled input state, form submit handler |
-| `frontend/src/components/MessageList.tsx` | TODO-1 | Render messages with user/bot styling |
-| `frontend/src/components/ChatLayout.tsx` | TODO-1, 2 | State management, wire API to child components |
+| TODO-12 | `frontend/src/types/chat.ts` | Define TypeScript types matching backend schemas |
+| TODO-13 | `frontend/src/lib/api.ts` | Implement `sendChat()` POST to `/chat` |
+| TODO-14 | `frontend/src/lib/api.ts` | (Optional) Implement `getHealth()` |
+| TODO-15 | `frontend/src/main.tsx` | Mount the React app into the page |
+| TODO-16 | `frontend/src/App.tsx` | Import and render the ChatLayout component |
+| TODO-17 | `frontend/src/components/ChatInput.tsx` | Create input state variable |
+| TODO-18 | `frontend/src/components/ChatInput.tsx` | Build submit handler and JSX |
+| TODO-19 | `frontend/src/components/MessageList.tsx` | Render messages with user/bot styling |
+| TODO-20 | `frontend/src/components/ChatLayout.tsx` | State management, handleSend function |
+| TODO-21 | `frontend/src/components/ChatLayout.tsx` | Render layout with MessageList and ChatInput |
 
 **Instructor-owned files (do not modify):** `backend/app/core/config.py`, all Docker/infra files, `Makefile`, `scripts/*.sh`.
 
@@ -141,18 +148,18 @@ Every file that students need to implement contains numbered `TODO` comments wit
 ├── backend/
 │   ├── requirements.txt
 │   └── app/
-│       ├── main.py               # TODO-1, 2
+│       ├── main.py               # TODO-4, 5
 │       ├── api/routes/
-│       │   ├── chat.py           # TODO-1
-│       │   └── health.py         # TODO-1
+│       │   ├── chat.py           # TODO-7
+│       │   └── health.py         # TODO-6
 │       ├── core/
 │       │   └── config.py         # instructor-owned
 │       ├── models/
 │       │   └── schemas.py        # TODO-1, 2, 3
 │       └── services/
-│           ├── chat_service.py   # TODO-1, 2
-│           ├── graph_client.py   # TODO-1
-│           └── answer_formatter.py # TODO-1
+│           ├── chat_service.py   # TODO-10, 11
+│           ├── graph_client.py   # TODO-8
+│           └── answer_formatter.py # TODO-9
 ├── frontend/
 │   ├── package.json
 │   ├── index.html
@@ -161,14 +168,14 @@ Every file that students need to implement contains numbered `TODO` comments wit
 │   ├── public/
 │   │   └── favicon.svg
 │   └── src/
-│       ├── main.tsx              # TODO-1
-│       ├── App.tsx               # TODO-1
-│       ├── lib/api.ts            # TODO-1, 2
-│       ├── types/chat.ts         # TODO-1
+│       ├── main.tsx              # TODO-15
+│       ├── App.tsx               # TODO-16
+│       ├── lib/api.ts            # TODO-13, 14
+│       ├── types/chat.ts         # TODO-12
 │       └── components/
-│           ├── ChatLayout.tsx    # TODO-1, 2
-│           ├── ChatInput.tsx     # TODO-1, 2
-│           └── MessageList.tsx   # TODO-1
+│           ├── ChatLayout.tsx    # TODO-20, 21
+│           ├── ChatInput.tsx     # TODO-17, 18
+│           └── MessageList.tsx   # TODO-19
 ├── data_team/
 │   ├── README.md
 │   ├── incoming/

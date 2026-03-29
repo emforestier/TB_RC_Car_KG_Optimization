@@ -22,7 +22,7 @@ def format_graph_results(records: list[dict]) -> str:
     if not records:
         return "No matching data was found in the graph for that question."
 
-    # TODO-1 (Required): Format the results based on how many rows came back.
+    # TODO-9 (Required): Format the results based on how many rows came back.
     #
     # Handle three cases:
     #

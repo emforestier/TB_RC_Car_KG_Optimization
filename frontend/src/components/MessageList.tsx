@@ -21,7 +21,7 @@ interface MessageListProps {
 }
 
 export default function MessageList({ messages }: MessageListProps) {
-  // TODO-1 (Required): Render each message in the list.
+  // TODO-19 (Required): Render each message in the list.
   //
   // Steps:
   //   1. If messages is empty, show a short placeholder like

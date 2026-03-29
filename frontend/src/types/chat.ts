@@ -12,7 +12,7 @@
  *     knows what the API expects and returns.
  */
 
-// TODO-1 (Required): Define the ChatRequest and ChatResponse types.
+// TODO-12 (Required): Define the ChatRequest and ChatResponse types.
 //
 // Look at backend/app/models/schemas.py to see what fields exist:
 //
